@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Heart & Stress Monitor</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6af41b98f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="dashboard">
+    <header>
+      <h1><i class="fa-solid fa-heart-pulse"></i> AI Heart & Stress Monitor</h1>
+    </header>
+
+    <main>
+      <div class="video-section">
+        <div class="camera-frame">
+          <img src="{{ url_for('video_feed') }}" id="video">
+        </div>
+        <p class="note"><i class="fa-solid fa-camera"></i> Camera Active - Detecting Blink & Stress</p>
+      </div>
+
+      <div class="stats-section">
+        <div class="stat-card blink">
+          <i class="fa-solid fa-eye"></i>
+          <h2>Blink Rate</h2>
+          <p><span id="blink">--</span> /min</p>
+        </div>
+
+        <div class="stat-card stress">
+          <i class="fa-solid fa-brain"></i>
+          <h2>Stress Level</h2>
+          <p><span id="stress">--</span></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 HeartFace AI | Designed by Sameer</p>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

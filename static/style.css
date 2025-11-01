@@ -1,0 +1,103 @@
+body {
+  background: radial-gradient(circle at top left, #111827, #0f172a);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard {
+  width: 90%;
+  max-width: 1200px;
+  background: #1e293b;
+  border-radius: 25px;
+  padding: 20px 40px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #00ffc6;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+}
+
+.video-section {
+  text-align: center;
+}
+
+.camera-frame {
+  display: inline-block;
+  border: 3px solid #00ffc6;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+}
+
+#video {
+  width: 480px;
+  height: 360px;
+  border-radius: 15px;
+}
+
+.note {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+.stats-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-card {
+  background: #0f172a;
+  border-radius: 20px;
+  padding: 20px 30px;
+  width: 250px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.4);
+}
+
+.stat-card i {
+  font-size: 45px;
+  color: #00ffc6;
+  margin-bottom: 10px;
+}
+
+.stat-card h2 {
+  font-size: 20px;
+  color: #e2e8f0;
+  margin: 5px 0;
+}
+
+.stat-card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ffc6;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  margin-top: 40px;
+}
